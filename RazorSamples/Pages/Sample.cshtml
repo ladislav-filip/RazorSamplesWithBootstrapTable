@@ -6,4 +6,8 @@ ViewData["Title"] = "Sample";
 }
 <h1>@ViewData["Title"]</h1>
 
-<script src="~/js/Sample.js" asp-append-version="true"></script>
+<input type="hidden" id="sample-api" value="api/sample" />
+
+@section Scripts {
+    <script src="~/js/Sample.js" asp-append-version="true"></script>
+}

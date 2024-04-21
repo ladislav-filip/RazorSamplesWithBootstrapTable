@@ -7,6 +7,16 @@
     public static init() {
         console.log('SamplePage.init()');
     }
+
+    public loadData() {
+        console.log('SamplePage.loadData()');
+        const url: string = $('#sample-api').val() as string;
+
+        $.get(url, function (data) {
+            console.log(data);
+        });
+    }
 }
 
-new SamplePage();
+const page = new SamplePage();
+page.loadData();
