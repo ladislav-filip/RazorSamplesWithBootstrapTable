@@ -8,6 +8,18 @@ ViewData["Title"] = "Sample";
 
 <input type="hidden" id="sample-api" value="api/sample" />
 
+<table id="sample-data" class="table table-striped table-bordered">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Surname</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
 @section Scripts {
-    <script src="~/js/Sample.js" asp-append-version="true"></script>
+    @* <script src="~/js/Sample.js" asp-append-version="true"></script> *@
+    <script src="~/js/my-sample.js" asp-append-version="true"></script>
 }

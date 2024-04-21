@@ -9,11 +9,16 @@ var SamplePage = /** @class */ (function () {
     SamplePage.prototype.loadData = function () {
         console.log('SamplePage.loadData()');
         var url = $('#sample-api').val();
-        $.get(url, function (data) {
-            console.log(data);
-        });
+        // $('#sample-data').bootstrapTable({
+        //    url: url
+        // });
+        // $.get(url, function (data: SampleData[]) {
+        //     console.log(data);
+        // });
     };
     return SamplePage;
 }());
-var page = new SamplePage();
-page.loadData();
+$(document).ready(function () {
+    var page = new SamplePage();
+    page.loadData();
+});
