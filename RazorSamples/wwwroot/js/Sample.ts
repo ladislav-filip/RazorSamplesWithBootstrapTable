@@ -1,4 +1,8 @@
-﻿interface SampleData {
+﻿import $ from 'jquery';
+import 'bootstrap';
+import 'bootstrap-table';
+
+interface SampleData {
     id: number;
     name: string;
     surname: string;
@@ -18,9 +22,9 @@ class SamplePage {
         console.log('SamplePage.loadData()');
         const url: string = $('#sample-api').val() as string;
 
-        // $('#sample-data').bootstrapTable({
-        //    url: url
-        // });
+        $('#sample-data').bootstrapTable({
+           url: url
+        });
 
         // $.get(url, function (data: SampleData[]) {
         //     console.log(data);
